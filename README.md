@@ -6,8 +6,8 @@ Do a case study of a complex model system, implement/improve an existing computa
 - Kathlene Titus
 - Taylor Von Hausen
 
-### Project Idea:
+### Project:
 
-- Image recognition
-- Equation that model fractals or animal polution
+- Logistic Map equation
+- Population case study
 
