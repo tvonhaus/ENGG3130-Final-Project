@@ -6,8 +6,10 @@ Do a case study of a complex model system, implement/improve an existing computa
 - Kathlene Titus
 - Taylor Von Hausen
 
-### Project:
-
+### Project Description:
 - Logistic Map equation
-- Population case study
+- Rabbit population case study 
+
+Rabbit population can be studied through a simple equation that models population growth or decline over several generations that follows the famous fractal pattern, the mandelbrot set. 
+
 
