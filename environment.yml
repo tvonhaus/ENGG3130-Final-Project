@@ -1,0 +1,23 @@
+name: finalproject
+channels:
+    - conda-force
+dependencies:
+    - python=3.6
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib
+    - sphinx
+    - jupyter
+    - networkx=1.*
+    - nbstripout
+    - seaborn
+    - tqdm
+    - future
+    - pathlib
+    - sys
+    - time
+    - types
+    - pip: 
+        - PyQt5
+        - pyqtgraph
