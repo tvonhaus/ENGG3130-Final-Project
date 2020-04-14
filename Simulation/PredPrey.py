@@ -73,6 +73,7 @@ class PredPrey(Cell2D):
     
     def LinxEqn(L,death_rate,c,H):
         return L + c*L*H - death_rate*L
+        
 
 class PredPreyViewer(Cell2DViewer):
     """Generates images and animations."""
