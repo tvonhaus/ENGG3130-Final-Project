@@ -7,21 +7,53 @@ import numpy as np
 import matplotlib.pyplot as plt
 import thinkplot
 from matplotlib import rc
+from matplotlib import animation
 rc('animation', html='html5')
 from PredPrey import PredPrey, PredPreyViewer
 
 rd = PredPrey(100,params=(0.6,0.7,0.014,0.014))
+print(rd.array)
+print(rd.array2)
 viewer  = PredPreyViewer(rd)
-thinkplot.preplot(cols=3)
-viewer.step(1000)
-viewer.draw()
 
-thinkplot.subplot(2)
-viewer.step(2000)
-viewer.draw()
 
-thinkplot.subplot(3)
-viewer.step(4000)
-viewer.draw()
+anim = viewer.animate(frames=100)
+anim
+# anim.save('predpreyanimation.mp4',fps=30)
+# plt.show()
+ 
+# viewer.draw()
 
-plt.savefig('PredPreyTest.pdf')
+# thinkplot.preplot(cols=3)
+# viewer.step(1000)
+# viewer.draw()
+
+# thinkplot.subplot(2)
+# viewer.step(2000)
+# viewer.draw()
+# thinkplot.subplot(3)
+# viewer.step(4000)
+# viewer.draw()
+# plt.show()
+
+# thinkplot.preplot(cols=5)
+# viewer.step(500)
+# viewer.draw()
+# thinkplot.subplot(2)
+# viewer.step(500)
+# viewer.draw()
+
+# thinkplot.subplot(3)
+# viewer.step(500)
+# viewer.draw()
+
+# thinkplot.subplot(4)
+# viewer.step(500)
+# viewer.draw()
+
+# thinkplot.subplot(5)
+# viewer.step(30000)
+# viewer.draw()
+# plt.show()
+
+# plt.savefig('PredPreyTest.pdf')

@@ -121,9 +121,9 @@ class Cell2DViewer:
         """
         fig = plt.figure()
         self.draw(grid)
-        anim = animation.FuncAnimation(fig, self.animate_func,
+        anim = animation.FuncAnimation(fig, self.animate_func, 
                                        init_func=self.init_func,
-                                       frames=frames, interval=interval)
+                                       frames=np.arange(frames), interval=interval,blit=False)
         return anim
 
     def init_func(self):
