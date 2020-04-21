@@ -16,10 +16,6 @@ def logistic_eqn_3(rate,x):
 def logistic_eqn_power(rate,x,n):
     return rate * x * ((1 - x)**n)
 
-def logistic_eqn_carrying_capacity(rate,x,k):
-    return rate * x * ((1 - x)/k)
-
-
 # Creates 50 (default) evenly spaced numbers between interval of 0 to 1
 x =  np.linspace(0,1)
 # Creates y values for logistic eqn with rate of 2 and x values between 0 and 1

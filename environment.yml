@@ -1,12 +1,11 @@
 name: finalproject
-channels:
-    - conda-force
 dependencies:
+    - pip
     - python=3.6
     - numpy
     - scipy
     - pandas
-    - matplotlib
+    - matplotlib=2.1.2
     - sphinx
     - jupyter
     - networkx=1.*
