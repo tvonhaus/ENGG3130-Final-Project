@@ -1,0 +1,22 @@
+name: finalproject
+dependencies:
+    - pip
+    - python=3.6
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib=2.1.2
+    - sphinx
+    - jupyter
+    - networkx=1.*
+    - nbstripout
+    - seaborn
+    - tqdm
+    - future
+    - pathlib
+    - sys
+    - time
+    - types
+    - pip: 
+        - PyQt5
+        - pyqtgraph

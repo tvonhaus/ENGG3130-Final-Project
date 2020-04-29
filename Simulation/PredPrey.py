@@ -66,14 +66,7 @@ class PredPrey(Cell2D):
         # self.array += ra * cA - reaction + f * (1-A) 
         # self.array2 += rb * cB + reaction - (f+k) * B
         self.array += birth_rate*cH - a*L*H
-        self.array2 += c*cL*cH - death_rate*L
-    
-    def HareEqn(H,birth_rate,a,L):
-        return H + birth_rate*H - a*L*H
-    
-    def LinxEqn(L,death_rate,c,H):
-        return L + c*L*H - death_rate*L
-        
+        self.array2 += c*cL*cH - death_rate*L    
 
 class PredPreyViewer(Cell2DViewer):
     """Generates images and animations."""
