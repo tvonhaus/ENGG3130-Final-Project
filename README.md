@@ -8,8 +8,12 @@ especially as a model for population growth over time.
 - Taylor Von Hausen
 
 ### Dependencies: 
+Provided in the environment.yml file. 
+
 name: finalproject
+
 dependencies:
+
     - pip
     - python=3.6
     - numpy
@@ -49,7 +53,9 @@ The logistic map's bifurcation diagram was recreated in order to further investi
 ![Bifurcation.png](./figures/Bifurcation.png)
 
 To produce the bifurcation diagram, rate=1 and rate=2 figures:
+
 ~ python logistic_map.py
+
 Ensure you have python 3.6 and the necessary dependencies.
 
 Furthermore, the Lokta-Volterra equation were used to describe the dynamics of biological systems in which two species interact. To verify this model, population of snowshoe hares and lynx was used to see the relationship between the predator and prey. Data
@@ -59,7 +65,9 @@ number of pelts sold each year.
 ![HareLynxHudsonBay.png](./figures/HareLynxHudsonBay.png)
 
 To produce the Predator Prey Relations figure:
+
 ~ python HudsonBayPlot.py
+
 Ensure you have python 3.6 and the necessary dependencies.
 
 Results from the experiment prove the similarities between the logistic map and Lokta-Volterra equations, particularly their cyclic nature.
