@@ -7,6 +7,30 @@ especially as a model for population growth over time.
 - Kathlene Titus
 - Taylor Von Hausen
 
+### Dependencies: 
+name: finalproject
+dependencies:
+    - pip
+    - python=3.6
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib=2.1.2
+    - sphinx
+    - jupyter
+    - networkx=1.*
+    - nbstripout
+    - seaborn
+    - tqdm
+    - future
+    - pathlib
+    - sys
+    - time
+    - types
+    - pip: 
+        - PyQt5
+        - pyqtgraph
+
 ### Project Description:
 
 Rabbit population can be studied using the logistic map equation which models population growth or decline over several generations.
@@ -24,12 +48,19 @@ The logistic map's bifurcation diagram was recreated in order to further investi
 
 ![Bifurcation.png](./figures/Bifurcation.png)
 
+To produce the bifurcation diagram, rate=1 and rate=2 figures:
+~ python logistic_map.py
+Ensure you have python 3.6 and the necessary dependencies.
+
 Furthermore, the Lokta-Volterra equation were used to describe the dynamics of biological systems in which two species interact. To verify this model, population of snowshoe hares and lynx was used to see the relationship between the predator and prey. Data
 was obtained from the Hudson Bay Compan's archives in which they estimated Snow Shoe Hare and Lynx populations based on the 
 number of pelts sold each year.
 
 ![HareLynxHudsonBay.png](./figures/HareLynxHudsonBay.png)
 
+To produce the Predator Prey Relations figure:
+~ python HudsonBayPlot.py
+Ensure you have python 3.6 and the necessary dependencies.
 
 Results from the experiment prove the similarities between the logistic map and Lokta-Volterra equations, particularly their cyclic nature.
 

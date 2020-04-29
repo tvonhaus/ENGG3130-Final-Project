@@ -6,7 +6,7 @@ years = []
 hares = []
 lynx = []
 
-with open('HudsonBayData.txt') as HusonBayDataFile:
+with open('./data/HudsonBayData.txt') as HusonBayDataFile:
     csv_reader = csv.reader(HusonBayDataFile, delimiter=',')
     line_count = 0
     for row in csv_reader:
