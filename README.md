@@ -8,8 +8,6 @@ especially as a model for population growth over time.
 - Taylor Von Hausen
 
 ### Project Description:
-- Logistic Map equation
-- Rabbit population case study 
 
 Rabbit population can be studied using the logistic map equation which models population growth or decline over several generations.
 
